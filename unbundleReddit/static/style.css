@@ -1,0 +1,128 @@
+/* Set page height to full browser window for positioning footer */
+html, body {
+  height: 100vh;
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+.page-wrap {
+  min-height: 100vh;
+  margin-bottom: -36px; /* allows for 1px border */
+}
+.page-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header {
+  float: right;
+  display: inline-block;
+  margin: 0;
+}
+#app-icon {
+  height: 19px;
+  width: 20px;
+  vertical-align: middle;
+}
+#notify-icon {
+  height: 19px;
+  width: 20px;
+  vertical-align: middle;
+}
+#logo {
+  display: block;
+  padding-top: 200px;
+  position: relative;
+  margin: 0 auto;
+}
+.subtitle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #4285f4;
+  font-size: 16px;
+}
+.centered {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+#category-box {
+  width: 500px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  margin-top: 30px;
+  padding: 5px 10px 5px 10px;
+}
+#category-box:hover {
+  border-color: #b9b9b9;
+}
+#category-box:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+#button-box {
+  margin: 30px auto;
+}
+.button {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  color: #6d6d6d;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 1px solid #ffffff;
+}
+
+.button:hover {
+  border: 1px solid #d9d9d9;
+  color: #242424;
+}
+a{
+  text-decoration: none;
+}
+.ulonhover:hover {
+  text-decoration: underline;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+}
+li a {
+  text-align: center;
+  padding: 0 15px 0 15px;
+  color: #6d6d6d;
+  font-size: small;
+  vertical-align: middle;
+
+}
+li a:hover{
+  text-decoration: underline;
+}
+#footer{
+  background-color: #f2f2f2;
+  line-height: 34px;
+  height: 34px;
+  border-top: 1px solid #b9b9b9;
+}
+.float-ul-right  {
+  float: right;
+  margin: 0;
+}
+.float-ul-left {
+  float: left;
+  margin: 0;
+}
+div#loading {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 200px;
+  display: none;
+  cursor: wait;
+}

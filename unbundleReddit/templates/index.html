@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unbundled Reddit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href=""/>
+  </head>
+    <body>
+      <div class="page-wrap">
+        <div class="header">
+          <ul>
+            <li><a href="">Reddit</a></li>
+            <li><a href="">Stuff</a></li>
+            <li><a href=""><img id="app-icon" src="http://1.bp.blogspot.com/-nMdX6MZauIk/Vm6Dwjv1b_I/AAAAAAAAItI/giZYtswgUO0/s1600/menugrid.png"/></a></li>
+            <li><a href=""><img id="notify-icon" src="http://image.flaticon.com/icons/png/128/181/181539.png"/></a></li>
+          </ul>
+        </div>
+
+        <div id="loading" class="centered">
+          <img src="{{ url_for('static', filename='Spinner-1s-200px.svg') }}"/>
+        </div>
+
+        <div id="content">
+          <div class="centered">
+            <img id="logo" src="/static/reddit-unbundled-logo.png">
+          </div>
+          <form>
+             <select name="category" id="category-box" class="centered">
+                <option value="All" selected>All</option>
+                <option value="SFW">SFW</option>
+                <option value="NSFW">NSFW</option>
+             </select>
+            <div id="button-box" class="centered">
+                <a href="/"><div class="button" onclick="alerting()">Search Category</div></a>
+                <a href="/feeling-lucky"><div class="button" onclick="loading()">I'm Feeling Lucky</div></a>
+            </div>
+          </form>
+          </div>
+        </div>
+
+        <div id="footer">
+            <ul class="float-ul-right">
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Settings</a></li>
+            </ul>
+            <ul class="float-ul-left">
+              <li><a href="">Advertising</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+        </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        function alerting() {
+          alert("Hold tight this feature is coming soon ... ");
+        }
+      </script>
+      <script type="text/javascript">
+        function loading() {
+            $("#loading").show();
+            $("#content").hide();
+        }
+      </script>
+    </body>
+</html>
